@@ -19,7 +19,7 @@ const ErrorPage = () => {
             <Lottie animationData={errorPage} loop={true}></Lottie>
             <Typography component="div">
                 <Box sx={{ letterSpacing: 4, m: 1 }}>
-                    <h2 className='heading-font text-xl' >I am very sleepy,please go <Button onClick={handlehome} variant="contained" endIcon={<HomeIcon></HomeIcon>} style={{ background: purple[500] }} all-font>Home</Button></h2>
+                    <h2 className='heading-font text-xl font-semibold text-[#7A320A]'>I am very sleepy,please go <Button onClick={handlehome} variant="contained" endIcon={<HomeIcon></HomeIcon>} style={{ background: purple[500] }} all-font>Home</Button></h2>
                 </Box>
             </Typography>
         </div>
