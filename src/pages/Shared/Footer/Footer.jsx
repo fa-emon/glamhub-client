@@ -58,7 +58,7 @@ const Footer = () => {
                             </div>
                             <div className='flex justify-start'>
                                 <span className='text-[#DD6E8B]'><IoLocation className='me-6' /></span>
-                                <p className='text-sm'>75/a West street, Block-c Bangladesh</p>
+                                <p className='text-sm'>75/A, West street, Bangladesh</p>
                             </div>
                         </div>
                     </GridItem>
