@@ -19,14 +19,14 @@ const NavBar = () => {
     }
 
     const navOptions = <>
-        <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/'}>Home</Link></li>
-        <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/instructors'}>Instructors</Link></li>
-        <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/classes'}>Classes</Link></li>
+        <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/'}>Home</Link></li>
+        <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/instructors'}>Instructors</Link></li>
+        <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/classes'}>Classes</Link></li>
         {
             user ?
                 <>
-                    <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/dashboard'}>Dashboard</Link></li>
-                    <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm all-font hover:bg-[#DD6E8B] hover:text-black">LogOut</button></li>
+                    <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/dashboard'}>Dashboard</Link></li>
+                    <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm heading-font hover:bg-[#DD6E8B] hover:text-black tracking-wide">LogOut</button></li>
                 </> :
                 <>
                     <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/login'}>Log In</Link></li>
@@ -36,7 +36,7 @@ const NavBar = () => {
     </>
 
     return (
-        <div className="navbar bg-black text-white">
+        <div className="navbar opacity-95 bg-black text-white">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
