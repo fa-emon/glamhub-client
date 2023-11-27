@@ -3,6 +3,7 @@ import Banner from "../Banner/Banner";
 import ExtraSection1 from "../ExtraSection1/ExtraSection1";
 import Gallery from "../Gallery/Gallery";
 import PricingPlan from "../PricingPlan/PricingPlan";
+import Review from "../Review/Review";
 
 
 const Home = () => {
@@ -11,8 +12,9 @@ const Home = () => {
             <Banner></Banner>
             <AboutMe></AboutMe>
             <ExtraSection1></ExtraSection1>
-            <PricingPlan></PricingPlan>
             <Gallery></Gallery>
+            <PricingPlan></PricingPlan>
+            <Review></Review>
         </div>
     );
 };
