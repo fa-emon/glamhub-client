@@ -1,4 +1,4 @@
-import image from '../../../assets/Review/1.png'
+import image from '../../../assets/Review/1.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
