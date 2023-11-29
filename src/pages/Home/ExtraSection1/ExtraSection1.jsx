@@ -6,15 +6,16 @@ import Eye from '../../../assets/ExtraSection1/eye.png'
 import Eyebrow from '../../../assets/ExtraSection1/Eyebrow.png'
 import Haircut from '../../../assets/ExtraSection1/haircut.png'
 import Makeupbox from '../../../assets/ExtraSection1/makeup box.svg'
+import 'animate.css';
 
 const ExtraSection1 = () => {
     return (
         <div className="bg-black mb-20 flex items-center">
             <div className='w-1/2'>
-                <img style={{ height: '', width: '100%', objectFit: 'contain' }} src={image} alt="" />
+                <img className='animate__animated animate__fadeInLeft' style={{ height: '', width: '100%', objectFit: 'contain' }} src={image} alt="" />
             </div>
             <div className='w-1/2 text-white'>
-                <Row gutter={[16, 32]}>
+                <Row className='animate__animated animate__fadeInRight' gutter={[16, 32]}>
                     <Col className='all-font' span={8}>
                         <img className='rounded-full' style={{ width: '60px', height: '60px', backgroundColor: '#DD6E8B', color: 'white' }} src={facial} alt="" />
                         <h2 className='mt-4'>Facial Makeup</h2>

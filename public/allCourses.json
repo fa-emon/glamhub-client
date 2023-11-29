@@ -1,0 +1,362 @@
+[
+    {
+        "course_id": "1a4b2652-80c2-4b8a-9c0a-3f017cbf08f1",
+        "name": "GraceLocks",
+        "image": "https://i.ibb.co/BGmwvbp/pexels-photo-1001901.jpg",
+        "category": "Hair_Makeup",
+        "price": 179.99,
+        "short_description": "Explore the fundamentals of hair makeup techniques for a variety of styles.",
+        "ratings": 4.7,
+        "students_enrolled": 120
+    },
+    {
+        "course_id": "b2fa3c62-4f14-4b8a-9f5e-fa761f2173e9",
+        "name": "LuxeCurls",
+        "image": "https://i.ibb.co/NFV0LqQ/pexels-photo-11409541.jpg",
+        "category": "Hair_Makeup",
+        "price": 249.99,
+        "short_description": "Master the art of creating intricate and stylish hair makeup looks.",
+        "ratings": 4.8,
+        "students_enrolled": 90
+    },
+    {
+        "course_id": "9234b197-03d1-4b47-a02d-bc20fead1267",
+        "name": "ChicStrands",
+        "image": "https://i.ibb.co/CMkFG2m/pexels-photo-11871115.jpg",
+        "category": "Hair_Makeup",
+        "price": 199.99,
+        "short_description": "Unlock your creativity with imaginative and artistic hair makeup designs.",
+        "ratings": 4.6,
+        "students_enrolled": 75
+    },
+    {
+        "course_id": "0c6a82d1-03f7-4a5f-845f-c5e7fb8d9c2b",
+        "name": "OpulentStyles",
+        "image": "https://i.ibb.co/ZKYHsKZ/pexels-photo-6371819.jpg",
+        "category": "Hair_Makeup",
+        "price": 299.99,
+        "short_description": "Gain certification in using airbrush techniques for flawless hair makeup application.",
+        "ratings": 4.9,
+        "students_enrolled": 50
+    },
+    {
+        "course_id": "4e1f2b24-61d8-4a2c-a697-524d1e2ea414",
+        "name": "DivineTresses",
+        "image": "https://i.ibb.co/SyzGHH5/pexels-photo-12848540.jpg",
+        "category": "Hair_Makeup",
+        "price": 149.99,
+        "short_description": "Learn about haircare essentials and product selection for makeup artists.",
+        "ratings": 4.5,
+        "students_enrolled": 110
+    },
+    {
+        "course_id": "6f4d1e0b-9475-4ff5-ae2e-f18e48d0ed9e",
+        "name": "EtherealLocks",
+        "image": "https://i.ibb.co/GF98JwK/free-photo-of-smiling-woman-in-brunette-curly-hair.jpg",
+        "category": "Hair_Makeup",
+        "price": 199.99,
+        "short_description": "Develop business and marketing strategies for a successful career in hair makeup artistry.",
+        "ratings": 4.7,
+        "students_enrolled": 80
+    },
+    {
+        "course_id": "e2371d36-1eeb-4d65-b58f-1c1c52ef49f2",
+        "name": "StarGaze Eyes",
+        "image": "https://i.ibb.co/64DkZHX/pexels-photo-2463027.jpg",
+        "category": "Eye_Makeup",
+        "price": 159.99,
+        "short_description": "Explore the basics of eye makeup techniques for various looks and styles.",
+        "ratings": 4.6,
+        "students_enrolled": 100
+    },
+    {
+        "course_id": "f3c6f34a-349f-48b1-9f36-978f321e8b43",
+        "name": "EnchantEye",
+        "image": "https://i.ibb.co/KsbY9L0/pexels-photo-3851879.jpg",
+        "category": "Eye_Makeup",
+        "price": 229.99,
+        "short_description": "Master the art of creating intricate and captivating eye makeup designs.",
+        "ratings": 4.8,
+        "students_enrolled": 80
+    },
+    {
+        "course_id": "58f8cb1c-32a3-48e2-a198-41a4a26a3b99",
+        "name": "LuminEyes",
+        "image": "https://i.ibb.co/PCFQJzN/pexels-photo-4383453.jpg",
+        "category": "Eye_Makeup",
+        "price": 189.99,
+        "short_description": "Unlock your creativity with imaginative and artistic eye makeup artistry.",
+        "ratings": 4.7,
+        "students_enrolled": 65
+    },
+    {
+        "course_id": "8410a44d-2425-4d6a-81c4-b18046828c0e",
+        "name": "GlamBlink",
+        "image": "https://i.ibb.co/DDDv9jk/pexels-photo-13358159.jpg",
+        "category": "Eye_Makeup",
+        "price": 279.99,
+        "short_description": "Get certified in using airbrush techniques for flawless eye makeup application.",
+        "ratings": 4.9,
+        "students_enrolled": 45
+    },
+    {
+        "course_id": "7860d30b-6c50-4a4d-88ee-dfce903a9f4e",
+        "name": "EpicEye Art",
+        "image": "https://i.ibb.co/zfLwJnM/pexels-photo-3115655.jpg",
+        "category": "Eye_Makeup",
+        "price": 139.99,
+        "short_description": "Learn the essential techniques and product selection for stunning eye makeup.",
+        "ratings": 4.5,
+        "students_enrolled": 90
+    },
+    {
+        "course_id": "b06e9a24-af80-40e3-96d8-07976fbcfe8b",
+        "name": "MystiGaze",
+        "image": "https://i.ibb.co/PZKKRJ0/pexels-photo-13944869.jpg",
+        "category": "Eye_Makeup",
+        "price": 189.99,
+        "short_description": "Develop business and marketing strategies for a successful career in eye makeup artistry.",
+        "ratings": 4.7,
+        "students_enrolled": 75
+    },
+    {
+        "course_id": "ef2e2b9d-2141-4a7d-b89a-95f4ef51d087",
+        "name": "BrideGlow",
+        "image": "https://i.ibb.co/7QmQ5bt/pexels-photo-2106685.jpg",
+        "category": "Wedding_Makeup",
+        "price": 299.99,
+        "short_description": "Become an expert in creating timeless and beautiful bridal makeup looks.",
+        "ratings": 4.8,
+        "students_enrolled": 120
+    },
+    {
+        "course_id": "0b44e3b3-8007-4bb4-a9b2-85385b835b62",
+        "name": "VowChic",
+        "image": "https://i.ibb.co/3fhMRqC/pexels-photo-14081907.jpg",
+        "category": "Wedding_Makeup",
+        "price": 179.99,
+        "short_description": "Learn the art of grooming and makeup specifically tailored for grooms.",
+        "ratings": 4.5,
+        "students_enrolled": 80
+    },
+    {
+        "course_id": "a0f42e61-c170-4d24-b61d-727e3b8a03cc",
+        "name": "CharmBridal",
+        "image": "https://i.ibb.co/RNVjtKm/free-photo-of-smiling-woman-in-a-traditional-indian-wedding-dress.jpg",
+        "category": "Wedding_Makeup",
+        "price": 249.99,
+        "short_description": "Specialize in creating stunning makeup looks for destination weddings.",
+        "ratings": 4.7,
+        "students_enrolled": 100
+    },
+    {
+        "course_id": "fcf14c4d-ae5a-4df7-95f7-418636ab5a17",
+        "name": "BlissGlam",
+        "image": "https://i.ibb.co/HTrbQ5z/pexels-photo-13661843.jpg",
+        "category": "Wedding_Makeup",
+        "price": 319.99,
+        "short_description": "Master the intricate techniques of Asian bridal makeup for diverse cultural weddings.",
+        "ratings": 4.9,
+        "students_enrolled": 90
+    },
+    {
+        "course_id": "63ac58fc-8e18-4a3b-b6e5-32828e038f93",
+        "name": "EternaChic",
+        "image": "https://i.ibb.co/1762VkR/pexels-photo-13123601.jpg",
+        "category": "Wedding_Makeup",
+        "price": 219.99,
+        "short_description": "Combine the art of makeup with hairstyling for complete wedding beauty expertise.",
+        "ratings": 4.6,
+        "students_enrolled": 110
+    },
+    {
+        "course_id": "a1d6b281-5763-4daa-912b-988bf53e503a",
+        "name": "WedGlow",
+        "image": "https://i.ibb.co/18xVggx/pexels-photo-9398389.jpg",
+        "category": "Wedding_Makeup",
+        "price": 289.99,
+        "short_description": "Discover the secrets to creating long-lasting and flawless bridal makeup.",
+        "ratings": 4.8,
+        "students_enrolled": 95
+    },
+    {
+        "course_id": "b72f4d41-2a9d-4a16-83ea-40a141dc46d8",
+        "name": "Enchante",
+        "image": "https://i.ibb.co/80gT7Xh/pexels-photo-4312028.jpg",
+        "category": "Effect_Makeup",
+        "price": 349.99,
+        "short_description": "Learn the art of transforming faces into various characters using makeup.",
+        "ratings": 4.7,
+        "students_enrolled": 85
+    },
+    {
+        "course_id": "0b8dbd6b-69f1-4b34-9f0b-4c8e34e978b8",
+        "name": "Mystique",
+        "image": "https://i.ibb.co/QK1t35D/pexels-photo-7532761.jpg",
+        "category": "Effect_Makeup",
+        "price": 379.99,
+        "short_description": "Master the application of prosthetics for realistic and stunning makeup effects.",
+        "ratings": 4.9,
+        "students_enrolled": 92
+    },
+    {
+        "course_id": "e1a55755-55f4-40d2-9a2a-8d67efc8025e",
+        "name": "Radiance",
+        "image": "https://i.ibb.co/SPMnfPj/free-photo-of-portrait-of-a-woman-wearing-creative-makeup-and-long-nails.jpg",
+        "category": "Effect_Makeup",
+        "price": 319.99,
+        "short_description": "Explore advanced special effects makeup techniques for film and theater.",
+        "ratings": 4.8,
+        "students_enrolled": 100
+    },
+    {
+        "course_id": "f453f57a-5b95-4c10-9751-2a10de245679",
+        "name": "Illume",
+        "image": "https://i.ibb.co/cyfSnLb/pexels-photo-7705980.jpg",
+        "category": "Effect_Makeup",
+        "price": 249.99,
+        "short_description": "Create terrifying and realistic horror makeup looks perfect for Halloween.",
+        "ratings": 4.6,
+        "students_enrolled": 78
+    },
+    {
+        "course_id": "ad6d4a3a-0f15-4a48-9ff2-8c7e19825413",
+        "name": "Ethereal",
+        "image": "https://i.ibb.co/syKbFbt/pexels-photo-7615278.jpg",
+        "category": "Effect_Makeup",
+        "price": 289.99,
+        "short_description": "Learn the techniques of aging makeup to create realistic elderly characters.",
+        "ratings": 4.5,
+        "students_enrolled": 88
+    },
+    {
+        "course_id": "51e90699-45f7-477b-bce4-1033d7106a3f",
+        "name": "Transforme",
+        "image": "https://i.ibb.co/RgbQ01p/free-photo-of-woman-wearing-a-costume-and-makeup-for-the-day-of-the-dead-celebrations-in-mexico.jpg",
+        "category": "Effect_Makeup",
+        "price": 359.99,
+        "short_description": "Dive into the world of science fiction and fantasy makeup for extraordinary looks.",
+        "ratings": 4.8,
+        "students_enrolled": 94
+    },
+    {
+        "course_id": "fee64e11-23a1-4d65-8f96-2da2f399eb1a",
+        "name": "RadiantGlow",
+        "image": "https://i.ibb.co/qWK6Cxc/pexels-photo-2811089.jpg",
+        "category": "Face_Makeup",
+        "price": 299.99,
+        "short_description": "Achieve a radiant and natural everyday makeup look with a focus on glowing skin.",
+        "ratings": 4.6,
+        "students_enrolled": 75
+    },
+    {
+        "course_id": "1dce4b29-dc21-4f3b-b4a2-9c0d9e30a8bb",
+        "name": "Sculpte",
+        "image": "https://i.ibb.co/LSrzWDQ/pexels-photo-12698450.jpg",
+        "category": "Face_Makeup",
+        "price": 349.99,
+        "short_description": "Master the art of facial contouring to enhance and define facial features.",
+        "ratings": 4.7,
+        "students_enrolled": 82
+    },
+    {
+        "course_id": "c1b54587-1854-41c7-bf15-2e1f1e43a2f5",
+        "name": "Elegance",
+        "image": "https://i.ibb.co/RNCYjv4/pexels-photo-4052841.jpg",
+        "category": "Face_Makeup",
+        "price": 379.99,
+        "short_description": "Learn the techniques to create stunning bridal makeup looks for weddings and special occasions.",
+        "ratings": 4.9,
+        "students_enrolled": 90
+    },
+    {
+        "course_id": "3a3121e2-5c8d-4f5a-8222-6a95a5bbbc11",
+        "name": "Charmora",
+        "image": "https://i.ibb.co/q7L5M4F/pexels-photo-14047467.jpg",
+        "category": "Face_Makeup",
+        "price": 329.99,
+        "short_description": "Explore the world of artistic makeup expressions and unleash your creativity.",
+        "ratings": 4.8,
+        "students_enrolled": 88
+    },
+    {
+        "course_id": "ce5edfc0-5762-47c3-831f-78d6d5f631a7",
+        "name": "Lumine",
+        "image": "https://i.ibb.co/1Rqjdt4/pexels-photo-3869368.jpg",
+        "category": "Face_Makeup",
+        "price": 309.99,
+        "short_description": "Create glamorous evening makeup looks suitable for parties and events.",
+        "ratings": 4.7,
+        "students_enrolled": 80
+    },
+    {
+        "course_id": "40800d60-5044-498d-994a-4cddab3cc0e5",
+        "name": "Serenite",
+        "image": "https://i.ibb.co/dbccBzq/pexels-photo-2039648.jpg",
+        "category": "Face_Makeup",
+        "price": 359.99,
+        "short_description": "Dive into high fashion editorial makeup and create bold and innovative looks.",
+        "ratings": 4.8,
+        "students_enrolled": 92
+    },
+    {
+        "course_id": "15b96c0f-5f2d-4c9a-b1e5-c5f22f71eead",
+        "name": "RunwayChic",
+        "image": "https://i.ibb.co/N65NcGq/pexels-photo-2468607.jpg",
+        "category": "Fashion_Makeup",
+        "price": 389.99,
+        "short_description": "Discover the art of creating chic and trendy makeup looks suitable for the fashion runway.",
+        "ratings": 4.7,
+        "students_enrolled": 78
+    },
+    {
+        "course_id": "1b11dd55-7f52-4783-baa2-b83643c2a758",
+        "name": "AvantGardeAura",
+        "image": "https://i.ibb.co/mc4qXMH/pexels-photo-3689120.jpg",
+        "category": "Fashion_Makeup",
+        "price": 419.99,
+        "short_description": "Explore the revolutionary world of avant-garde makeup and express your artistic vision.",
+        "ratings": 4.9,
+        "students_enrolled": 85
+    },
+    {
+        "course_id": "745c1d8d-7d9e-4399-a81e-6e6ebe6f1a6d",
+        "name": "CoutureGlam",
+        "image": "https://i.ibb.co/ZLS7j50/pexels-photo-5010662.jpg",
+        "category": "Fashion_Makeup",
+        "price": 449.99,
+        "short_description": "Learn the techniques of haute couture makeup to achieve glamorous and luxurious looks.",
+        "ratings": 4.8,
+        "students_enrolled": 93
+    },
+    {
+        "course_id": "2d65b086-c307-4460-9e68-9a1b96b5d4b7",
+        "name": "VogueVibes",
+        "image": "https://i.ibb.co/6Z2fgmg/pexels-photo-6184167.jpg",
+        "category": "Fashion_Makeup",
+        "price": 399.99,
+        "short_description": "Master the art of creating radiant makeup looks perfect for the fashion runway.",
+        "ratings": 4.8,
+        "students_enrolled": 87
+    },
+    {
+        "course_id": "a4f7a12f-ae3d-484c-8ed7-ec1abfe54c2b",
+        "name": "HauteRadiance",
+        "image": "https://i.ibb.co/Bw8J80M/pexels-photo-2860740.jpg",
+        "category": "Fashion_Makeup",
+        "price": 369.99,
+        "short_description": "Immerse yourself in the glamorous world of vogue vibes and high-fashion makeup trends.",
+        "ratings": 4.7,
+        "students_enrolled": 79
+    },
+    {
+        "course_id": "9df76788-1093-4cfc-bb22-b6b0d96ea874",
+        "name": "EdgyElegance",
+        "image": "https://i.ibb.co/Kz3W8q9/pexels-photo-3124330.jpg",
+        "category": "Fashion_Makeup",
+        "price": 429.99,
+        "short_description": "Achieve editorial edge with makeup techniques that push the boundaries of creativity.",
+        "ratings": 4.9,
+        "students_enrolled": 91
+    }
+]

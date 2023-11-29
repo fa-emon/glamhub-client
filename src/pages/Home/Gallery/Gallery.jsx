@@ -57,7 +57,7 @@ const Gallery = () => {
                         <img className="object-cover transform hover:scale-105 transition-transform duration-300 hover:brightness-90" style={{ height: '50vh', width: '60vh', objectFit: 'cover' }} src={image8} alt="" />
                     </Col>
                     <Col span={8}>
-                        <img className="object-cover transform hover:scale-105 transition-transform duration-300 hover:brightness-90" style={{ height: '50vh', width: '60vh', objectFit: 'cover' }} src={image9} alt="" />
+                        <img className="object-cover transform hover:scale-105 transition-transform duration-500 hover:brightness-90" style={{ height: '50vh', width: '60vh', objectFit: 'cover' }} src={image9} alt="" />
                     </Col>
                 </Row>
             </div>
