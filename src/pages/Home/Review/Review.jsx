@@ -22,7 +22,7 @@ const Review = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    navigation={true}
+                    navigation={false}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper absolute bottom-96 text-white bg-slate-950 bg-opacity-10 bg-blend-soft-light w-3/4 mx-auto backdrop-blur-md rounded-lg"
                 >

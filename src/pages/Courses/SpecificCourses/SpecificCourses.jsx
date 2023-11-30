@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import DisplaySpecificCourses from "./DisplaySpecificCourses";
 import CourseBanner from "../CourseBanner/CourseBanner";
+import Feedback from "../Feedback/Feedback";
 
 
 const SpecificCourses = () => {
@@ -14,7 +15,7 @@ const SpecificCourses = () => {
                 Choose your way
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-10 px-20 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-10 px-20 mb-20">
                 {
                     specificCourses.map(allCourses => <DisplaySpecificCourses
                         key={allCourses.name}
@@ -23,6 +24,8 @@ const SpecificCourses = () => {
                     </DisplaySpecificCourses>)
                 }
             </div>
+
+            <Feedback></Feedback>
         </>
     );
 };
