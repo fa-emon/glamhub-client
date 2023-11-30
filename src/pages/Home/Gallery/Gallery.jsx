@@ -22,7 +22,7 @@ const Gallery = () => {
                 </h2>
                 <h2 className='my-2'>
                     <Typography display="inline">
-                        <Box className='heading-font uppercase heading-font text-2xl font-bold text-black' sx={{ letterSpacing: 4, display: 'inline-block' }}>PORTFOLIO</Box>
+                        <Box className='heading-font uppercase heading-font text-2xl font-bold text-white' sx={{ letterSpacing: 4, display: 'inline-block' }}>PORTFOLIO</Box>
                     </Typography>
                 </h2>
                 <hr className='w-[127px] border-[#DD6E8B] mb-3' />

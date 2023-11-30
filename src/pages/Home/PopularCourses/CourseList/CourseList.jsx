@@ -1,5 +1,4 @@
 const CourseList = ({ categoryWiseCourse }) => {
-    console.log(categoryWiseCourse);
 
     return (
         <div className="relative">

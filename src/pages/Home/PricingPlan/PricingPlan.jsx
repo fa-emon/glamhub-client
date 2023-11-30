@@ -13,7 +13,7 @@ const PricingPlan = () => {
                 </h2>
                 <h2 className='my-2'>
                     <Typography display="inline">
-                        <Box className='heading-font uppercase heading-font text-2xl font-bold text-black' sx={{ letterSpacing: 4, display: 'inline-block'}}>pricing plan</Box>
+                        <Box className='heading-font uppercase heading-font text-2xl font-bold text-white' sx={{ letterSpacing: 4, display: 'inline-block'}}>pricing plan</Box>
                     </Typography>
                 </h2>
                 <hr className='w-[168px] border-[#DD6E8B] mb-3' />

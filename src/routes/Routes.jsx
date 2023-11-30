@@ -4,15 +4,28 @@ import Home from "../pages/Home/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Shared/Login/Login";
 import Register from "../pages/Shared/Register/Register";
+import Courses from "../pages/Courses/Courses/Courses";
+import SpecificCourses from "../pages/Courses/SpecificCourses/SpecificCourses";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
-        children:[
+        children: [
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/courses',
+                element: <Courses></Courses>
+            },
+            {
+                path: '/allCourses/:category',
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/allCourses/${params.category}`);
+                },
+                element: <SpecificCourses></SpecificCourses>
             },
             {
                 path: '/login',
