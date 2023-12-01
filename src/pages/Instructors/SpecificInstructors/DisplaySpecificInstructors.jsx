@@ -1,7 +1,7 @@
 
 
 const DisplaySpecificInstructors = ({ allInstructors }) => {
-    const { instructor_image, instructor_name, instructor_email } = allInstructors;
+    const { instructor_image, instructor_name } = allInstructors;
 
     return (
         <div className="card card-compact w-96 shadow-xl relative">

@@ -21,24 +21,51 @@ const DisplaySpecificCourses = ({ allCourses }) => {
                     alt=""
                 />
             </figure>
-            <div className="card-body heading-font tracking-wider text-white bg-[#0e0e0e] rounded-md">
-                <div className='flex w-full justify-between items-center'>
-                    <h2 className="card-title"><span className='text-[#DD6E8B]'>{name}</span></h2>
-                    <Button onClick={() => handleDetails(course_id)} className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded px-2 py-1' colorScheme='twitter' rightIcon={<FaArrowCircleRight className='' />}>
-                        <span className='tracking-wider heading-font uppercase'>details</span>
-                    </Button>
-                </div>
-                <p>Instructors: {instructor_name}</p>
-                <div className="flex justify-between w-full">
-                    <p>Available Seats: {available_seats}</p>
-                    <p className='text-end'>Price: ${price}</p>
-                </div>
-                <div className='mt-1'>
-                    <Button className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white transition-transform duration-500 rounded px-2 py-2 w-full'>
-                        <span className='tracking-[.2rem] heading-font uppercase font-semibold '>select</span>
-                    </Button>
-                </div>
-            </div>
+            {
+                available_seats == 0 ?
+                    <>
+                        <div className="card-body heading-font tracking-wider text-white bg-[#922f2f] rounded-md">
+                            <div className='flex w-full justify-between items-center'>
+                                <h2 className="card-title"><span className='text-[#DD6E8B]'>{name}</span></h2>
+                                <Button onClick={() => handleDetails(course_id)} className='bg-[#808080] hover:bg-black text-black hover:text-white rounded px-2 py-1 btn-disabled' colorScheme='twitter' rightIcon={<FaArrowCircleRight className='' />}>
+                                    <span className='tracking-wider heading-font uppercase'>details</span>
+                                </Button>
+                            </div>
+                            <p>Instructors: {instructor_name}</p>
+                            <div className="flex justify-between w-full">
+                                <p>Available Seats: {available_seats}</p>
+                                <p className='text-end'>Price: ${price}</p>
+                            </div>
+                            <div className='mt-1'>
+                                <Button className='bg-[#808080] hover:bg-black text-black hover:text-white transition-transform duration-500 rounded px-2 py-2 w-full btn-disabled'>
+                                    <span className='tracking-[.2rem] heading-font uppercase font-semibold '>select</span>
+                                </Button>
+                            </div>
+                            <p className='absolute bottom-80 left-32 uppercase text-xl'>unavailable</p>
+                        </div>
+                    </>
+                    :
+                    <>
+                        <div className="card-body heading-font tracking-wider text-white bg-[#0e0e0e] rounded-md">
+                            <div className='flex w-full justify-between items-center'>
+                                <h2 className="card-title"><span className='text-[#DD6E8B]'>{name}</span></h2>
+                                <Button onClick={() => handleDetails(course_id)} className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded px-2 py-1' colorScheme='twitter' rightIcon={<FaArrowCircleRight className='' />}>
+                                    <span className='tracking-wider heading-font uppercase'>details</span>
+                                </Button>
+                            </div>
+                            <p>Instructors: {instructor_name}</p>
+                            <div className="flex justify-between w-full">
+                                <p>Available Seats: {available_seats}</p>
+                                <p className='text-end'>Price: ${price}</p>
+                            </div>
+                            <div className='mt-1'>
+                                <Button className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white transition-transform duration-500 rounded px-2 py-2 w-full'>
+                                    <span className='tracking-[.2rem] heading-font uppercase font-semibold '>select</span>
+                                </Button>
+                            </div>
+                        </div>
+                    </>
+            }
         </div>
     );
 };
