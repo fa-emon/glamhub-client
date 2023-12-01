@@ -6,6 +6,7 @@ import Login from "../pages/Shared/Login/Login";
 import Register from "../pages/Shared/Register/Register";
 import Courses from "../pages/Courses/Courses/Courses";
 import SpecificCourses from "../pages/Courses/SpecificCourses/SpecificCourses";
+import SpecificDetails from "../pages/Courses/SpecificDetails/SpecificDetails";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,13 @@ export const router = createBrowserRouter([
                     return fetch(`http://localhost:5000/allCourses/${params.category}`);
                 },
                 element: <SpecificCourses></SpecificCourses>
+            },
+            {
+                path: '/allCourses/category/:id',
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/allCourses/category/${params.id}`);
+                },
+                element: <SpecificDetails></SpecificDetails>
             },
             {
                 path: '/login',

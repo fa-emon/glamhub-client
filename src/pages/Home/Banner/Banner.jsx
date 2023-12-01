@@ -21,8 +21,8 @@ const Banner = () => {
                         <Box className='heading-font text-[#DD6E8B] text-9xl mt-4' sx={{ letterSpacing: 6, display: 'inline-block' }}>Glam<span style={{ fontFamily: 'Ephesis, cursive' }}>Hub</span></Box>
                     </Typography>
                 </p>
-                <Button className='bg-[#DD6E8B] rounded px-2 py-1 mt-5' colorScheme='twitter' rightIcon={<FaArrowCircleRight className='text-white'/>}>
-                    <span className='text-black tracking-wider heading-font'>About GlamHub</span>
+                <Button className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded px-2 py-1 mt-5' colorScheme='twitter' rightIcon={<FaArrowCircleRight className='' />}>
+                    <span className='tracking-wider heading-font'>About GlamHub</span>
                 </Button>
             </div>
         </>

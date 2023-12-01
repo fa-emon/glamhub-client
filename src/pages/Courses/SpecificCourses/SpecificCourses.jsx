@@ -6,7 +6,7 @@ import Feedback from "../Feedback/Feedback";
 
 const SpecificCourses = () => {
     const specificCourses = useLoaderData();
-    console.log(specificCourses)
+    
     return (
         <>
             <CourseBanner></CourseBanner>
