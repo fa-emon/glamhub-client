@@ -12,7 +12,6 @@ const CourseList = ({ categoryWiseCourse }) => {
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     <div>
                         <p className="all-font text-3xl">{categoryWiseCourse.category}</p>
-                        <p className="text-[#DD6E8B] all-font tracking-[.5em]">DISCOVER</p>
                     </div>
                 </div>
             </figure>

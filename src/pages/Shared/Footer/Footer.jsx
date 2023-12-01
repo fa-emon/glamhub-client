@@ -75,15 +75,15 @@ const Footer = () => {
                             </div>
 
                             <div className='flex justify-start'>
-                                <p className='me-24 text-sm'>Mon-Fri:</p>
+                                <p className='me-24 text-sm'>Mon-Fri :</p>
                                 <p className='hover:text-[#DD6E8B] text-sm'>10am-7pm</p>
                             </div>
                             <div className='flex justify-start'>
-                                <p className='me-24 text-sm my-2'>Saturday:</p>
+                                <p className='me-24 text-sm my-2'>Saturday :</p>
                                 <p className='hover:text-[#DD6E8B] text-sm my-2'>10am-5pm</p>
                             </div>
                             <div className='flex justify-start'>
-                                <p className='me-24 text-sm'>Sunday:</p>
+                                <p className='me-24 text-sm'>Sunday :</p>
                                 <p className='text-[#DD6E8B] text-sm'>By Call</p>
                             </div>
                         </div>

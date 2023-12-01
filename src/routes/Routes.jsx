@@ -7,6 +7,9 @@ import Register from "../pages/Shared/Register/Register";
 import Courses from "../pages/Courses/Courses/Courses";
 import SpecificCourses from "../pages/Courses/SpecificCourses/SpecificCourses";
 import SpecificDetails from "../pages/Courses/SpecificDetails/SpecificDetails";
+import PrivateRoute from "./PrivateRoute";
+import Instructors from "../pages/Instructors/Instructors/Instructors";
+import SpecificInstructors from "../pages/Instructors/SpecificInstructors/SpecificInstructors";
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +29,7 @@ export const router = createBrowserRouter([
                 loader: async ({ params }) => {
                     return fetch(`http://localhost:5000/allCourses/${params.category}`);
                 },
-                element: <SpecificCourses></SpecificCourses>
+                element: <PrivateRoute><SpecificCourses></SpecificCourses></PrivateRoute>
             },
             {
                 path: '/allCourses/category/:id',
@@ -34,6 +37,17 @@ export const router = createBrowserRouter([
                     return fetch(`http://localhost:5000/allCourses/category/${params.id}`);
                 },
                 element: <SpecificDetails></SpecificDetails>
+            },
+            {
+                path: '/instructors',
+                element: <Instructors></Instructors>
+            },
+            {
+                path: '/allInstructors/:category',
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/allInstructors/${params.category}`);
+                },
+                element:<PrivateRoute><SpecificInstructors></SpecificInstructors></PrivateRoute>
             },
             {
                 path: '/login',
