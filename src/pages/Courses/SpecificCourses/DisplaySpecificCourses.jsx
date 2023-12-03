@@ -1,14 +1,52 @@
 import { Button } from '@chakra-ui/react';
+import { useContext } from 'react';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
+import Swal from 'sweetalert2';
+import useCart from '../../../hooks/useCart';
 
 const DisplaySpecificCourses = ({ allCourses }) => {
+    const { user } = useContext(AuthContext);
     const { name, image, instructor_name, available_seats, price, course_id } = allCourses;
 
+    const [, refetch] = useCart();
     const navigate = useNavigate();
 
     const handleDetails = (id) => {
         navigate(`/allCourses/category/${id}`)
+    }
+
+    const handleSelect = (allCourses) => {
+        console.log(allCourses)
+        const item = {
+            course_id, name, image, price, 
+            email: user?.email
+        }
+        
+        if (user) {
+            fetch(`http://localhost:5000/carts`, {
+                method: "POST",
+                body: JSON.stringify(item),
+                headers: {
+                    "Content-type": "application/json"
+                }
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data)
+                    if (data.insertedId) {
+                        refetch();
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: "Your desire course added successfully!",
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                    }
+                });
+        }
     }
 
     return (
@@ -59,7 +97,7 @@ const DisplaySpecificCourses = ({ allCourses }) => {
                                 <p className='text-end'>Price: ${price}</p>
                             </div>
                             <div className='mt-1'>
-                                <Button className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white transition-transform duration-500 rounded px-2 py-2 w-full'>
+                                <Button onClick={() => handleSelect(allCourses)} className='bg-[#DD6E8B] hover:bg-black text-black hover:text-white transition-transform duration-500 rounded px-2 py-2 w-full'>
                                     <span className='tracking-[.2rem] heading-font uppercase font-semibold '>select</span>
                                 </Button>
                             </div>
