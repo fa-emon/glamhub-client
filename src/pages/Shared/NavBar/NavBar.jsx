@@ -28,7 +28,7 @@ const NavBar = () => {
         {
             user ?
                 <>
-                    <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/dashboard'}>Dashboard <div className="badge bg-[#DD6E8B] text-white border-[#DD6E8B]">+{cart.length || 0}</div></Link></li>
+                    <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/dashboard/myCart'}>Dashboard <div className="badge bg-[#DD6E8B] text-white border-[#DD6E8B]">+{cart.length || 0}</div></Link></li>
                     <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm heading-font hover:bg-[#DD6E8B] hover:text-black tracking-wide">LogOut</button></li>
                 </> :
                 <>

@@ -10,6 +10,8 @@ import SpecificDetails from "../pages/Courses/SpecificDetails/SpecificDetails";
 import PrivateRoute from "./PrivateRoute";
 import Instructors from "../pages/Instructors/Instructors/Instructors";
 import SpecificInstructors from "../pages/Instructors/SpecificInstructors/SpecificInstructors";
+import Dashboard from "../layout/Dashboard";
+import MyCart from "../pages/Dashboard/MyCart/MyCart";
 
 export const router = createBrowserRouter([
     {
@@ -47,7 +49,7 @@ export const router = createBrowserRouter([
                 loader: async ({ params }) => {
                     return fetch(`http://localhost:5000/allInstructors/${params.category}`);
                 },
-                element:<PrivateRoute><SpecificInstructors></SpecificInstructors></PrivateRoute>
+                element: <PrivateRoute><SpecificInstructors></SpecificInstructors></PrivateRoute>
             },
             {
                 path: '/login',
@@ -60,6 +62,16 @@ export const router = createBrowserRouter([
             {
                 path: '*',
                 element: <ErrorPage></ErrorPage>
+            }
+        ]
+    },
+    {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'myCart',
+                element: <MyCart></MyCart>
             }
         ]
     }
