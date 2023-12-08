@@ -11,10 +11,23 @@ const SocialLogin = () => {
     const from = location.state?.from?.pathname || "/";
 
     const handleWithGoogleSignIn = () => {
+
         signInWithGoogle()
             .then((result) => {
                 const user = result.user;
                 console.log(user)
+
+                fetch("http://localhost:5000/users", {
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify({ name: user?.displayName, email: user?.email }),
+                })
+                    .then((response) => response.json())
+                    .then(() => {
+
+                    });
                 navigate(from, { replace: true });
             })
             .catch((error) => {

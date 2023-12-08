@@ -12,6 +12,7 @@ import Instructors from "../pages/Instructors/Instructors/Instructors";
 import SpecificInstructors from "../pages/Instructors/SpecificInstructors/SpecificInstructors";
 import Dashboard from "../layout/Dashboard";
 import MyCart from "../pages/Dashboard/MyCart/MyCart";
+import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 
 export const router = createBrowserRouter([
     {
@@ -72,7 +73,11 @@ export const router = createBrowserRouter([
             {
                 path: 'myCart',
                 element: <MyCart></MyCart>
-            }
+            },
+            {
+                path: 'allUsers',
+                element: <AllUsers></AllUsers>
+            },
         ]
     }
 ])

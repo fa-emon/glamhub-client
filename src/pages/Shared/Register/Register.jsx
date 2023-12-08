@@ -32,7 +32,7 @@ const Register = () => {
                 console.log('LoggedUser', loggedUser);
 
                 //After user creation, update their profile
-                updateUserProfile(data.name, activeAvatar)
+                updateUserProfile(data.name, data.photoURL)
                     .then(() => {
                         console.log('User Profile Updated Successfully.')
                         reset();
@@ -44,12 +44,12 @@ const Register = () => {
                             timer: 1500
                         })
 
-                        fetch("http://localhost:5001/user", {
+                        fetch("http://localhost:5000/users", {
                             method: "POST",
                             headers: {
                                 "Content-type": "application/json"
                             },
-                            body: JSON.stringify({ ...data, photoURL: activeAvatar }),
+                            body: JSON.stringify({ name: data.name, email: data.email}),
                         })
                             .then((response) => response.json())
                             .then((databaseData) => {
