@@ -11,28 +11,33 @@ const SocialLogin = () => {
     const from = location.state?.from?.pathname || "/";
 
     const handleWithGoogleSignIn = () => {
-
         signInWithGoogle()
             .then((result) => {
                 const user = result.user;
-                console.log(user)
+                console.log(user);
 
                 fetch("http://localhost:5000/users", {
                     method: "POST",
                     headers: {
-                        "Content-type": "application/json"
+                        "Content-type": "application/json",
                     },
                     body: JSON.stringify({ name: user?.displayName, email: user?.email }),
                 })
-                    .then((response) => response.json())
+                    .then((response) => {
+                        if (response.status === 409) {
+                            console.log('User already exists');
+                            // Handle the case where the user already exists, e.g., show a message to the user
+                        } else {
+                            return response.json();
+                        }
+                    })
                     .then(() => {
-
-                    });
-                navigate(from, { replace: true });
+                        navigate(from, { replace: true });
+                    })
             })
             .catch((error) => {
-                console.error('error', error)
-            })
+                console.error('error', error);
+            });
     }
 
     return (

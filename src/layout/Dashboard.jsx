@@ -13,13 +13,16 @@ import { FaUserShield } from "react-icons/fa6";
 import { FaRegFaceSmile } from "react-icons/fa6";
 import { SiGoogletagmanager } from "react-icons/si";
 import { MdOutlineFaceRetouchingNatural } from "react-icons/md"
+import useAdmin from "../hooks/useAdmin";
 
 
 const Dashboard = () => {
     const [cart] = useCart();
 
     // TODO: load data from the server to have dynamic isAdmin on data.
-    const isAdmin = true;
+    // const isAdmin = true;
+
+    const [isAdmin] = useAdmin();
 
     return (
         <div className="drawer lg:drawer-open">
