@@ -45,7 +45,7 @@ const Dashboard = () => {
                                     <Link><FaUserShield className="text-lg" />ADMIN HOME</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><MdOutlineFaceRetouchingNatural className="text-lg" />ADD NEW COURSE</Link>
+                                    <Link  to={'/dashboard/addNewCourse'}><MdOutlineFaceRetouchingNatural className="text-lg" />ADD NEW COURSE</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
                                     <Link><FaRegFaceSmile className="text-lg" />UPDATE COURSE</Link>

@@ -13,6 +13,8 @@ import SpecificInstructors from "../pages/Instructors/SpecificInstructors/Specif
 import Dashboard from "../layout/Dashboard";
 import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
+import AddNewCourse from "../pages/Dashboard/AddNewCourse/AddNewCourse";
+import AdminRoute from "./AdminRoute";
 
 export const router = createBrowserRouter([
     {
@@ -73,6 +75,10 @@ export const router = createBrowserRouter([
             {
                 path: 'myCart',
                 element: <MyCart></MyCart>
+            },
+            {
+                path: 'addNewCourse',
+                element: <AdminRoute><AddNewCourse></AddNewCourse></AdminRoute>
             },
             {
                 path: 'allUsers',
