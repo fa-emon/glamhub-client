@@ -1,17 +1,8 @@
-import { useEffect, useState } from "react";
 import ShowCourses from "./ShowCourses";
-
+import useCourses from "../../../hooks/useCourses";
 
 const Courses = () => {
-    const [allCourses, setAllCourses] = useState([]);
-
-    useEffect(() => {
-        fetch(`http://localhost:5000/allCourses`)
-            .then(response => response.json())
-            .then(data => {
-                setAllCourses(data);
-            });
-    }, []);
+    const [allCourses] = useCourses();
 
     const uniqueCourses = [...new Set(allCourses.map((allCourse) => allCourse.category))];
 

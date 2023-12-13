@@ -51,7 +51,7 @@ const Dashboard = () => {
                                     <Link><FaRegFaceSmile className="text-lg" />UPDATE COURSE</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><SiGoogletagmanager className="text-lg" />MANAGE ALL COURSES</Link>
+                                    <Link to={'/dashboard/manageAllCourses'} ><SiGoogletagmanager className="text-lg" />MANAGE ALL COURSES</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
                                     <Link to={'/dashboard/allUsers'}

@@ -15,6 +15,7 @@ import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 import AddNewCourse from "../pages/Dashboard/AddNewCourse/AddNewCourse";
 import AdminRoute from "./AdminRoute";
+import ManageAllCourses from "../pages/Dashboard/ManageAllCourses/ManageAllCourses";
 
 export const router = createBrowserRouter([
     {
@@ -79,6 +80,10 @@ export const router = createBrowserRouter([
             {
                 path: 'addNewCourse',
                 element: <AdminRoute><AddNewCourse></AddNewCourse></AdminRoute>
+            },
+            {
+                path: 'manageAllCourses',
+                element: <AdminRoute><ManageAllCourses></ManageAllCourses></AdminRoute>
             },
             {
                 path: 'allUsers',
