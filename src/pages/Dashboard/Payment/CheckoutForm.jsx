@@ -12,7 +12,7 @@ const CheckoutForm = ({ cart, price }) => {
     const [axiosSecure] = useAxiosSecure();
     const [cardError, setCardError] = useState('');
     const [clientSecret, setClientSecret] = useState('');
-    const [processing, setProcessing] = useState('false');
+    const [processing, setProcessing] = useState(false);
     const [paymentSuccess, setPaymentSuccess] = useState('');
 
     useEffect(() => {
