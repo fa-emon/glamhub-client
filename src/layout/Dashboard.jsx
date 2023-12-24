@@ -42,7 +42,7 @@ const Dashboard = () => {
                         isAdmin ?
                             <>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><FaUserShield className="text-lg" />ADMIN HOME</Link>
+                                    <Link to={'/dashboard/adminHome'}><FaUserShield className="text-lg" />ADMIN HOME</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
                                     <Link  to={'/dashboard/addNewCourse'}><MdOutlineFaceRetouchingNatural className="text-lg" />ADD NEW COURSE</Link>
@@ -61,7 +61,7 @@ const Dashboard = () => {
                             :
                             <>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><IoHome className="text-lg" />USER HOME</Link>
+                                    <Link to={'/dashboard/userHome'}><IoHome className="text-lg" />USER HOME</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
                                     <Link><SlCalender className="text-lg" />RESERVATION</Link>

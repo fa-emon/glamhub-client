@@ -2,14 +2,17 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { Box, Typography } from '@mui/material';
+import { IoCart } from "react-icons/io5";
 import { BiSolidUserCircle } from 'react-icons/bi';
 import useCart from "../../../hooks/useCart";
+import useAdmin from "../../../hooks/useAdmin";
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
     const isUserLoggedIn = !!user;
 
     const [cart] = useCart();
+    const [isAdmin] = useAdmin();
 
     const handleLogOut = () => {
         logOut()
@@ -28,8 +31,19 @@ const NavBar = () => {
         {
             user ?
                 <>
-                    <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={'/dashboard/myCart'}>Dashboard <div className="badge bg-[#DD6E8B] text-white border-[#DD6E8B]">+{cart.length || 0}</div></Link></li>
-                    <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm heading-font hover:bg-[#DD6E8B] hover:text-black tracking-wide">LogOut</button></li>
+                    {
+                        user && isAdmin ?
+                            <>
+                                <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={isAdmin ? '/dashboard/adminHome' : '/dashboard/userHome'}>Dashboard</Link></li>
+                                <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm heading-font hover:bg-[#DD6E8B] hover:text-black tracking-wide">LogOut</button></li>
+                            </>
+                            :
+                            <>
+                                <li><Link className="hover:bg-[#DD6E8B] hover:text-black tracking-wide" to={isAdmin ? '/dashboard/adminHome' : '/dashboard/userHome'}>Dashboard</Link></li>
+                                <li><div><Link className="badge bg-[#DD6E8B] text-white border-[#DD6E8B]" to={'/dashboard/myCart'}><IoCart className="text-lg me-2"></IoCart>+{cart.length || 0}</Link></div></li>
+                                <li><button onClick={handleLogOut} className="btn btn-ghost btn-sm heading-font hover:bg-[#DD6E8B] hover:text-black tracking-wide">LogOut</button></li>
+                            </>
+                    }
                 </> :
                 <>
                     <li><Link className="hover:bg-[#DD6E8B] hover:text-black" to={'/login'}>Log In</Link></li>

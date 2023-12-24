@@ -17,6 +17,8 @@ import AddNewCourse from "../pages/Dashboard/AddNewCourse/AddNewCourse";
 import AdminRoute from "./AdminRoute";
 import ManageAllCourses from "../pages/Dashboard/ManageAllCourses/ManageAllCourses";
 import Payment from "../pages/Dashboard/Payment/Payment";
+import UserHome from "../pages/Dashboard/UserHome/UserHome";
+import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 
 export const router = createBrowserRouter([
     {
@@ -76,6 +78,10 @@ export const router = createBrowserRouter([
         children: [
             // {.....users route.....}
             {
+                path: 'userHome',
+                element: <UserHome></UserHome>
+            },
+            {
                 path: 'myCart',
                 element: <MyCart></MyCart>
             },
@@ -84,6 +90,10 @@ export const router = createBrowserRouter([
                 element: <Payment></Payment>
             },
             // {.....admin route.....}
+            {   
+                path: 'adminHome',
+                element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
+            },
             {
                 path: 'allUsers',
                 element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
