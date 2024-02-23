@@ -19,6 +19,8 @@ import ManageAllCourses from "../pages/Dashboard/ManageAllCourses/ManageAllCours
 import Payment from "../pages/Dashboard/Payment/Payment";
 import UserHome from "../pages/Dashboard/UserHome/UserHome";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
+import UpdateCourses from "../pages/Dashboard/UpdateCourses/UpdateCourses";
+
 
 export const router = createBrowserRouter([
     {
@@ -90,7 +92,7 @@ export const router = createBrowserRouter([
                 element: <Payment></Payment>
             },
             // {.....admin route.....}
-            {   
+            {
                 path: 'adminHome',
                 element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
             },
@@ -101,6 +103,13 @@ export const router = createBrowserRouter([
             {
                 path: 'addNewCourse',
                 element: <AdminRoute><AddNewCourse></AddNewCourse></AdminRoute>
+            },
+            {
+                path: 'updateCourse/:id',
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/updateCourse/${params.id}`);
+                },
+                element: <AdminRoute><UpdateCourses></UpdateCourses></AdminRoute>
             },
             {
                 path: 'manageAllCourses',

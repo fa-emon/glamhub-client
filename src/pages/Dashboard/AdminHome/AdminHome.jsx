@@ -19,8 +19,10 @@ const AdminHome = () => {
     })
 
     return (
-        <div>
-            <h2 className="text-center heading-font text-3xl pt-4 mb-8 text-[#DD6E8B]">Welcome, {user?.displayName}</h2>
+        <>
+            <div className="mb-20">
+                <h2 className="text-center heading-font text-3xl pt-4 mt-10 text-[#DD6E8B]"><span className="text-white">Welcome</span>, {user?.displayName}</h2>
+            </div>
 
             <div className="grid grid-cols-4 gap-4">
                 <div className="bg-[#DD6E8B] rounded py-10 text-center hover:bg-[#0e0e0e] hover:text-white">
@@ -63,7 +65,7 @@ const AdminHome = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

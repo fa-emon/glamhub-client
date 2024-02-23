@@ -18,8 +18,8 @@ const ManageAllCourses = () => {
                             <th>IMAGE</th>
                             <th>COURSE NAME</th>
                             <th>PRICE</th>
-                            <th>ACTION</th>
-                            <th>ACTION</th>
+                            <th>UPDATE</th>
+                            <th>DELETE</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -3,12 +3,14 @@ import { LuPenSquare } from "react-icons/lu";
 import { MdDelete } from 'react-icons/md';
 import Swal from 'sweetalert2';
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Link } from "react-router-dom";
 
 const DisplayAllCourses = ({ courses }) => {
     const { name, image, price, _id } = courses;
 
     const [axiosSecure] = useAxiosSecure();
     const [, , refetch] = useCourses();
+
 
     const handleDelete = (id) => {
         Swal.fire({
@@ -21,7 +23,7 @@ const DisplayAllCourses = ({ courses }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                
+
                 axiosSecure.delete(`/allCourses/${id}`)
                     .then((response) => {
                         if (response.data.deletedCount > 0) {
@@ -55,7 +57,7 @@ const DisplayAllCourses = ({ courses }) => {
                 ${price}
             </td>
             <th>
-                <LuPenSquare onClick={() => handleUpdate(_id)} className='text-xl hover:text-green-600'></LuPenSquare>
+                <Link to={`/dashboard/updateCourse/${_id}`}><LuPenSquare className='text-xl hover:text-green-600'></LuPenSquare></Link>
             </th>
             <th>
                 <MdDelete onClick={() => handleDelete(_id)} className='text-xl hover:text-red-600'></MdDelete>
