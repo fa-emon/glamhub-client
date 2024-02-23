@@ -25,7 +25,7 @@ const DisplaySpecificCourses = ({ allCourses }) => {
         }
         
         if (user) {
-            fetch(`http://localhost:5000/carts`, {
+            fetch(`https://glamhub-server.vercel.app/carts`, {
                 method: "POST",
                 body: JSON.stringify(item),
                 headers: {

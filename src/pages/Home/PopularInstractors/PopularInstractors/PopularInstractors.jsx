@@ -6,7 +6,7 @@ const PopularInstractors = () => {
     const [allCourses, setAllCourses] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allCourses`)
+        fetch(`https://glamhub-server.vercel.app/allCourses`)
             .then(response => response.json())
             .then(data => {
                 // Create an object to store the course with the most enrolled students for each category

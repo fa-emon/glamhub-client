@@ -1,14 +1,33 @@
 import { Button } from '@chakra-ui/react';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
+import useAuth from '../../../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const ShowCourses = ({ categoryWiseCourse }) => {
     const { category, image, instructor_name, available_seats, price, } = categoryWiseCourse;
 
+    const { user } = useAuth();
     const navigate = useNavigate();
+
     const handleSeeMore = () => {
-        navigate(`/allCourses/${category}`)
-    }
+        if (!user || !user.email) {
+            Swal.fire({
+                title: "Login required for see more!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Please Login."
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/login', { state: { from: `/allCourses/${category}` } });
+                }
+            });
+        } else {
+            navigate(`/allCourses/${category}`);
+        }
+    };
 
     return (
         <div className="card card-compact w-96 shadow-xl relative">

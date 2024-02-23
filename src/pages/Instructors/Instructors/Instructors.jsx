@@ -6,7 +6,7 @@ const Instructors = () => {
     const [allInstructors, setAllInstructors] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allInstructors`)
+        fetch(`https://glamhub-server.vercel.app/allInstructors`)
             .then(response => response.json())
             .then(data => {
                 setAllInstructors(data);

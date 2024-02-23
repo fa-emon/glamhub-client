@@ -8,7 +8,7 @@ const BookingHistory = () => {
     const { data: bookingHistory, isLoading, isError } = useQuery({
         queryKey: ['bookingHistory', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/bookingHistory/${user.email}`);
+            const res = await fetch(`https://glamhub-server.vercel.app/bookingHistory/${user.email}`);
             if (!res.ok) {
                 throw new Error('Failed to fetch booking history');
             }

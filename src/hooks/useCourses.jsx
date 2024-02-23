@@ -4,7 +4,7 @@ const useCourses = () => {
     const { data: allCourses = [], isLoading: loading, refetch } = useQuery({
         queryKey: ['allCourses'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/allCourses')
+            const res = await fetch('https://glamhub-server.vercel.app/allCourses')
             return res.json();
         }
     })

@@ -40,14 +40,14 @@ export const router = createBrowserRouter([
             {
                 path: '/allCourses/:category',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/allCourses/${params.category}`);
+                    return fetch(`https://glamhub-server.vercel.app/allCourses/${params.category}`);
                 },
                 element: <PrivateRoute><SpecificCourses></SpecificCourses></PrivateRoute>
             },
             {
                 path: '/allCourses/category/:id',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/allCourses/category/${params.id}`);
+                    return fetch(`https://glamhub-server.vercel.app/allCourses/category/${params.id}`);
                 },
                 element: <SpecificDetails></SpecificDetails>
             },
@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
             {
                 path: '/allInstructors/:category',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/allInstructors/${params.category}`);
+                    return fetch(`https://glamhub-server.vercel.app/allInstructors/${params.category}`);
                 },
                 element: <PrivateRoute><SpecificInstructors></SpecificInstructors></PrivateRoute>
             },
@@ -118,7 +118,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateCourse/:id',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/updateCourse/${params.id}`);
+                    return fetch(`https://glamhub-server.vercel.app/updateCourse/${params.id}`);
                 },
                 element: <AdminRoute><UpdateCourses></UpdateCourses></AdminRoute>
             },

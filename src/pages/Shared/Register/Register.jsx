@@ -44,7 +44,7 @@ const Register = () => {
                             timer: 1500
                         })
 
-                        fetch("http://localhost:5000/users", {
+                        fetch("https://glamhub-server.vercel.app/users", {
                             method: "POST",
                             headers: {
                                 "Content-type": "application/json"

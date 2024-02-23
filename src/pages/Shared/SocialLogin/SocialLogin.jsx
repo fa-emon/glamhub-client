@@ -16,7 +16,7 @@ const SocialLogin = () => {
                 const user = result.user;
                 console.log(user);
 
-                fetch("http://localhost:5000/users", {
+                fetch("https://glamhub-server.vercel.app/users", {
                     method: "POST",
                     headers: {
                         "Content-type": "application/json",
