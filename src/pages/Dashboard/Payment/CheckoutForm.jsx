@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import useAuth from "../../../hooks/useAuth";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 const CheckoutForm = ({ cart, price }) => {
     const stripe = useStripe();
     const elements = useElements();
     const { user } = useAuth();
+    const navigate = useNavigate();
     const [axiosSecure] = useAxiosSecure();
     const [cardError, setCardError] = useState('');
     const [clientSecret, setClientSecret] = useState('');
@@ -103,6 +105,7 @@ const CheckoutForm = ({ cart, price }) => {
                             showConfirmButton: false,
                             timer: 1500
                         });
+                        navigate('/dashboard/paymentHistory');
                     }
                 })
         }

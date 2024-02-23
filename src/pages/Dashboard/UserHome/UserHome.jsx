@@ -2,9 +2,20 @@ import { IoWallet } from "react-icons/io5";
 import useAuth from "../../../hooks/useAuth";
 import { GiLipstick } from "react-icons/gi";
 import { FaPeopleCarry } from "react-icons/fa";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { useQuery } from "@tanstack/react-query";
 
 const UserHome = () => {
     const { user } = useAuth();
+    const [axiosSecure] = useAxiosSecure();
+
+    const { data: statistics = {} } = useQuery({
+        queryKey: ['user-statistics', user?.email],
+        queryFn: async () => {
+            const res = await axiosSecure(`/user-statistics/${user.email}`)
+            return res.data;
+        }
+    })
 
     return (
         <>
@@ -30,7 +41,7 @@ const UserHome = () => {
                         <div className="flex items-center justify-center">
                             <IoWallet className="text-6xl me-2 text-[#f1f1f1]"></IoWallet>
                             <div>
-                                <p className="text-3xl heading-font text-end">${}</p>
+                                <p className="text-3xl heading-font text-end">${statistics.totalRevenue}</p>
                                 <p className="text-2xl all-font text-end">TOTAL PAID</p>
                             </div>
                         </div>
@@ -40,7 +51,7 @@ const UserHome = () => {
                         <div className="flex items-center justify-center">
                             <FaPeopleCarry className="text-6xl me-2 text-[#f1f1f1]"></FaPeopleCarry>
                             <div>
-                                <p className="text-3xl heading-font">{}</p>
+                                <p className="text-3xl heading-font">{statistics.orderedCourse}</p>
                                 <p className="text-2xl all-font">ORDERS</p>
                             </div>
                         </div>
@@ -50,7 +61,7 @@ const UserHome = () => {
                         <div className="flex items-center justify-center">
                             <GiLipstick className="text-6xl me-2 text-[#f1f1f1]"></GiLipstick>
                             <div>
-                                <p className="text-3xl heading-font">{}</p>
+                                <p className="text-3xl heading-font">{statistics.totalCourses}</p>
                                 <p className="text-2xl all-font">COURSES</p>
                             </div>
                         </div>

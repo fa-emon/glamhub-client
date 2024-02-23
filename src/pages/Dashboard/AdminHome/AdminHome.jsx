@@ -29,7 +29,7 @@ const AdminHome = () => {
                     <div className="flex items-center justify-center">
                         <IoWallet className="text-6xl me-2 text-[#f1f1f1]"></IoWallet>
                         <div>
-                            <p className="text-3xl heading-font text-end">${statistics.revenue}</p>
+                            <p className="text-3xl heading-font text-end">${statistics.finalRevenue}</p>
                             <p className="text-2xl all-font text-end">REVENUE</p>
                         </div>
                     </div>

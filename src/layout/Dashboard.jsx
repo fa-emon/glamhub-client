@@ -59,13 +59,13 @@ const Dashboard = () => {
                                     <Link to={'/dashboard/userHome'}><IoHome className="text-lg" />USER HOME</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><IoWalletSharp className="text-lg" />PAYMENT HISTORY</Link>
+                                    <Link to={'/dashboard/paymentHistory'}><IoWalletSharp className="text-lg" />PAYMENT HISTORY</Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
                                     <Link to={'/dashboard/myCart'}><FaShoppingCart className="text-lg" />MY CART<div className="badge bg-black hover:bg-[#DD6E8B] text-white border-[#DD6E8B]">+{cart.length || 0}</div></Link>
                                 </li>
                                 <li className="bg-[#DD6E8B] hover:bg-black text-black hover:text-white rounded-md">
-                                    <Link><FaSwatchbook className="text-lg" />MY BOOKING HISTORY</Link>
+                                    <Link to={'/dashboard/bookingHistory'}><FaSwatchbook className="text-lg" />MY BOOKING HISTORY</Link>
                                 </li>
                             </>
                     }
